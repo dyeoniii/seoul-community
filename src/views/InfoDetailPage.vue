@@ -62,7 +62,11 @@ let mapInstance = null
 let markerInstance = null
 
 function goBack() {
-  router.push({ name: 'InfoList', params: { category: currentCategory.value || 'all' } })
+  if (window.history.length > 1) {
+    router.back()
+  } else {
+    router.push({ name: 'InfoList', params: { category: currentCategory.value || 'all' } })
+  }
 }
 
 const DefaultIcon = L.icon({

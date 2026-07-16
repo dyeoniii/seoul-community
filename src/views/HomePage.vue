@@ -66,7 +66,6 @@ const REGION_COLORS = [
 
     <section class="home-dashboard">
       <div class="dashboard-headline">
-        <h2>데이터 시각화 보드</h2>
         <p>서울 데이터를 한 섹션에서 비교하며 쉽게 이해할 수 있습니다.</p>
       </div>
 
